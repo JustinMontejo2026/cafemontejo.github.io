@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Starbucks PH</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+        <style>
+            body {  
+                margin: 0px;
+                background-color: #333;
+                height: 700px;
+                background: linear-gradient( rgba(20, 20, 20, 0.4), rgba(20, 20, 20, 1) ), url('https://stories.starbucks.com/uploads/2019/07/SBX20190725-Earnings-Q3-Featured-Image.jpg'); 
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+
+            header img {
+                text-align: center;
+                width: 275px;
+                padding-top: 55px;
+            }
+
+            header h1 {
+                font-family: 'Secular One', sans-serif;
+                font-size: 40pt;
+                color: #f2f2f2;
+                text-align: center;
+                margin: 10px;
+            }
+
+            header h2 {
+                font-family: 'Secular One', sans-serif;
+                font-size: 35pt;
+                color: #f2f2f2;
+                padding-top: 20px;
+                text-align: center;
+                margin: 10px;
+            }
+
+            header h3 {
+                font-family: 'Secular One', sans-serif;
+                font-size: 30pt;
+                color: #f2f2f2;
+                padding-top: 60px;
+                text-align: center;
+                margin-left: 10px;
+                margin-bottom: 10px;
+                margin-right: 10px;
+                margin-top: 20px;
+            }
+
+            section {
+                padding-bottom: 20px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                width: 100%;
+                background-color: white;
+                text-align: center;
+                height: 370px;
+            }
+
+            section h2 {
+                font-family: 'Secular One', sans-serif;
+                padding-top: 60px;
+                font-size: 40px;
+                margin: 20px;
+                margin-left: 0px;
+                margin-right: 0px;
+                color: #333;
+                text-align: center;
+            }
+
+
+            section h3 {
+                font-size: 31px;
+                font-family: 'Secular One', sans-serif;
+                padding-bottom: 10px;
+                margin-top: 0px;
+                color: #333;
+                text-align: center;
+            }
+
+            section img {
+                float: right;
+                width: 585px; height: 390px;
+            }
+
+            footer {
+                text-align: center;
+                margin-top: 20px;
+            }
+
+            footer h3 {
+                background-color: #c0a772;
+                font-size: 17pt;
+                color: #f2f2f2;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                margin-bottom: 0px;
+                font-family: 'Secular One', sans-serif;
+            }
+
+            #navbar {
+            overflow: hidden;
+            background-color: #f2f2f2;
+            opacity: 0.9;
+            }
+
+            #navbar a {
+            float: left;
+            display: block;
+            color: black;
+            font-family: 'Secular One', sans-serif;
+            text-align: center;
+            padding-top: 14px;
+            padding-bottom: 14px;
+            text-decoration: none;
+            font-size: 22px;
+            width: 33.33%;
+            }
+
+            #navbar a:hover {
+            background-color: black;
+            color: white;
+            opacity: 0.6;
+            }
+
+            #navbar a.active {
+            background-color: #c0a772;
+            color: black;
+            }
+
+            .content {
+            padding: 16px;
+            }
+
+            .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            }
+
+            .sticky + .content {
+            padding-top: 60px;
+            }
+            #feature {
+                text-align: center;
+                height: 310px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <nav id="navbar">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a class="active" href="about.html">About</a>
+        </nav>
+
+        <header id="feature">
+            <img src="https://starbuckscard.ph/sbcard/public/images/sblogo.svg" alt="Logo">
+        </header>
+
+        <section>
+            <img src="https://www.hitc.com/static/uploads/2022/09/GettyImages-1420597568-scaled.jpg" alt="Starbucks Shop">
+            <h2>What are you waiting for?</h2>
+            <h3>Check out the opening hours of the Starbucks branch nearest to you and get your freshly brewed coffee now!</h3>
+            <a href="menu.html" style="color: #959279;"><h3>Check out our menu!</h3></a>
+        </section>
+
+        <section>
+            <img src="https://pbs.twimg.com/media/FUIcSrlWUAIoSLi.jpg" alt="Ordering Methods">
+            <h2>Ready to order?</h2>
+            <h3>Find out if there's a store near you by checking the GrabFood or the Foodpanda app to order and complete your day!</h3>
+            <a href="index.html" style="color: #959279;"><h3>BACK TO HOME</h3></a>
+        </section>
+        
+   
+
+        <footer>
+            <h3>&copy; All Rights Reserved to Starbucks.</h3>
+        </footer>
+
+        <script>
+            window.onscroll = function() {myFunction()};
+            
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+            
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+            </script>
+            
+    </body>
+</html>

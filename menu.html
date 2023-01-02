@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Starbucks PH</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+        <style>
+            body {  
+                margin: 0px;
+                background-color: #333;
+                height: 700px;
+                background: linear-gradient( rgba(20, 20, 20, 0.4), rgba(20, 20, 20, 1) ), url('https://stories.starbucks.com/uploads/2019/07/SBX20190725-Earnings-Q3-Featured-Image.jpg'); 
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+
+            header img {
+                text-align: center;
+                width: 275px;
+                padding-top: 55px;
+            }
+
+            header h1 {
+                font-family: 'Secular One', sans-serif;
+                font-size: 40pt;
+                color: #f2f2f2;
+                text-align: center;
+                margin: 10px;
+            }
+
+            header h2 {
+                font-family: 'Secular One', sans-serif;
+                font-size: 35pt;
+                color: #f2f2f2;
+                padding-top: 20px;
+                text-align: center;
+                margin: 10px;
+            }
+
+            header h3 {
+                font-family: 'Secular One', sans-serif;
+                font-size: 30pt;
+                color: #f2f2f2;
+                padding-top: 60px;
+                text-align: center;
+                margin-left: 10px;
+                margin-bottom: 10px;
+                margin-right: 10px;
+                margin-top: 20px;
+            }
+
+            section {
+                padding-bottom: 20px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                width: 100%;
+                background-color: white;
+                text-align: center;
+                height: 450px;
+            }
+
+            section h2 {
+                font-family: 'Secular One', sans-serif;
+                padding-top: 60px;
+                font-size: 40px;
+                margin: 20px;
+                margin-left: 0px;
+                margin-right: 0px;
+                color: #333;
+                text-align: center;
+            }
+
+
+            section h3 {
+                font-size: 31px;
+                font-family: 'Secular One', sans-serif;
+                padding-bottom: 10px;
+                margin-top: 0px;
+                color: #333;
+                text-align: center;
+            }
+
+            section img {
+                float: right;
+                width: 470px; height: 470px;
+            }
+
+            footer {
+                text-align: center;
+                margin-top: 20px;
+            }
+
+            footer h3 {
+                background-color: #c0a772;
+                font-size: 17pt;
+                color: #f2f2f2;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                margin-bottom: 0px;
+                font-family: 'Secular One', sans-serif;
+            }
+
+            #navbar {
+            overflow: hidden;
+            background-color: #f2f2f2;
+            opacity: 0.9;
+            }
+
+            #navbar a {
+            float: left;
+            display: block;
+            color: black;
+            font-family: 'Secular One', sans-serif;
+            text-align: center;
+            padding-top: 14px;
+            padding-bottom: 14px;
+            text-decoration: none;
+            font-size: 22px;
+            width: 33.33%;
+            }
+
+            #navbar a:hover {
+            background-color: black;
+            color: white;
+            opacity: 0.6;
+            }
+
+            #navbar a.active {
+            background-color: #c0a772;
+            color: black;
+            }
+
+            .content {
+            padding: 16px;
+            }
+
+            .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            }
+
+            .sticky + .content {
+            padding-top: 60px;
+            }
+            #feature {
+                text-align: center;
+                height: 310px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <nav id="navbar">
+            <a href="index.html">Home</a>
+            <a class="active" href="menu.html">Menu</a>
+            <a href="about.html">About</a>
+        </nav>
+
+        <header id="feature">
+            <img src="https://starbuckscard.ph/sbcard/public/images/sblogo.svg" alt="Logo">
+        </header>
+
+        <section>
+            <img src="https://globalassets.starbucks.com/assets/70198375bb0a442f8792437b5d1df972.jpg?impolicy=1by1_wide_topcrop_630" alt="Mocha Frappuccino">
+            <h2>Mocha Frappuccino</h2>
+            <h3>Tall: 225...Grande: 250...Venti: 285</h3>
+            <h3>Ice, whole milk, coffee Frappuccino base syrup, instant coffee, and mocha sauce are blended together then topped with whipped cream.</h3>
+        </section>
+
+        <section>
+            <img src="https://globalassets.starbucks.com/assets/fe3131c518c34593938b32a67486fda0.jpg?impolicy=1by1_wide_topcrop_630" alt="Java Chip Frappuccino">
+            <h2>Java Chip Frappuccino</h2>
+            <h3>Tall: 260...Grande: 290...Venti: 320</h3>
+            <h3>Blend mocha sauce and Frappuccino chips with coffee, milk and ice, then top it off with whipped cream and a mocha drizzle.</h3>
+        </section>
+
+        <section>
+            <img src="https://starbucks.ph/seed_data/FRAPCRE_VanillaCreamFrappuccino.jpg" alt="Vanilla Cream">
+            <h2>Vanilla Cream</h2>
+            <h3>Tall: 250...Grande: 280...Venti: 310</h3>
+            <h3>This is a rich and creamy blend of vanilla bean, milk, and ice topped with whipped cream.</h3>
+        </section>
+
+        <section>
+            <img src="https://globalassets.starbucks.com/assets/17f8efcbdbc8476e9992503d4ee19f95.jpg?impolicy=1by1_wide_topcrop_630" alt="Green Tea Cream">
+            <h2>Green Tea Cream</h2>
+            <h3>Tall: 250...Grande: 280...Venti: 310</h3>
+            <h3>This is a blend of sweetened premium matcha green tea, milk, and ice topped off with sweetened whipped cream.</h3>
+        </section>
+
+        <section>
+            <img src="https://globalassets.starbucks.com/assets/921a409e6f55407da52eee4c8ad13ada.jpg?impolicy=1by1_wide_topcrop_630" alt="Iced Americano">
+            <h2>Iced Americano</h2>
+            <h3>Tall: 345...Grande: 375...Venti: 405</h3>
+            <h3>Espresso shots topped with cold water produce a light layer of crema, then served over ice.</h3>
+        </section>
+
+        <section>
+            <img src="https://globalassets.starbucks.com/assets/f4fd128c834643fa8c74f4ae9f579013.jpg?impolicy=1by1_wide_topcrop_630" alt="Iced Latte">
+            <h2>Iced Latte</h2>
+            <h3>Tall: 210...Grande: 235...Venti: 260</h3>
+            <h3>Dark, rich espresso combined with milk and served over ice.</h3>
+        </section>
+
+        <footer>
+            <h3>&copy; All Rights Reserved to Starbucks.</h3>
+        </footer>
+
+        <script>
+            window.onscroll = function() {myFunction()};
+            
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+            
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+            </script>
+            
+    </body>
+</html>
